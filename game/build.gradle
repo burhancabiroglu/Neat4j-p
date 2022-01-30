@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cabir'
+version 'DEV'
+
+repositories {
+    mavenLocal()
+    maven { url "https://plugins.gradle.org/m2/" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":core")
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl:1.10.0"
+    implementation "com.badlogicgames.gdx:gdx-platform:1.10.0:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-box2d-platform:1.10.0:natives-desktop"
+
+    implementation "com.badlogicgames.gdx:gdx:1.10.0"
+    implementation "com.badlogicgames.gdx:gdx-box2d:1.10.0"
+}
+
+test {
+    useJUnitPlatform()
+}
