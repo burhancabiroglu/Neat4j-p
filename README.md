@@ -15,17 +15,17 @@ Built using libgdx.<br>
 // Loss ƒunction: categorical_crossentropy
 
  Skeleton skeleton = new Skeleton();
-        skeleton.add(new LayerSkeleton(1,3));
-        skeleton.add(new LayerSkeleton(ActivationType.ReLU));
-        skeleton.add(new LayerSkeleton(3,8));
-        skeleton.add(new LayerSkeleton(ActivationType.ReLU));
-        skeleton.add(new LayerSkeleton(8,4));
-        skeleton.add(new LayerSkeleton(ActivationType.ReLU));
-        skeleton.add(new LayerSkeleton(4,3));
-        skeleton.add(new LayerSkeleton(ActivationType.ReLU));
-        skeleton.add(new LayerSkeleton(3,2));
+ skeleton.add(new LayerSkeleton(1,3));
+ skeleton.add(new LayerSkeleton(ActivationType.ReLU));
+ skeleton.add(new LayerSkeleton(3,8));
+ skeleton.add(new LayerSkeleton(ActivationType.ReLU));
+ skeleton.add(new LayerSkeleton(8,4));
+ skeleton.add(new LayerSkeleton(ActivationType.ReLU));
+ skeleton.add(new LayerSkeleton(4,3));
+ skeleton.add(new LayerSkeleton(ActivationType.ReLU));
+ skeleton.add(new LayerSkeleton(3,2));
 
-        neatPlayer = new NEAT(skeleton,10,0.1,100);
+ neatPlayer = new NEAT(skeleton,10,0.1,100);
 ```
 
 <div align-items=center; style="text-align: center;" width="100%">
